@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aqua;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+.logo{
+    height: 64px;
+    width: 60px;
+    margin-left: 20px;
+    /* margin-top: 20px; */
+}
+
+nav{
+    display: flex;
+    background-color: black;
+}
+
+.navleft{
+    /* margin-top: 30px; */
+    margin-left: 50px;
+    display: flex;
+}
+.navright{
+    display: flex;
+    margin-left: 1000px;
+    /* margin-top: 20px; */
+    align-items: center;
+}
+
+.navright ul{
+    display: flex;
+    
+}
+
+.navright ul li{
+    list-style: none;
+    
+}
+
+.navright ul li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    
+}
+
+.Spotify{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    min-height: 69vh;
+}
+
+.bottom{
+    background-color: black;
+    color: white;
+    position: sticky;
+    height: 150px;
+}
