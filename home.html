@@ -14,27 +14,53 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <nav>
-        <div class="navleft">
-            <a href="home.html"><img class="logo" src="spotify_logo.png" alt="" srcset=""></a>
-            <a href="#" class="Spotify">Spotify</a>
-        </div>
-        <div class="navright">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    
+        <div class="main_content">
+           <div class="navleft">
+               <a href="home.html" class="dot_logo"><img class="logo" src="dot_logo.jpeg" alt="" srcset=""onclick="clicked()"></a>
 
-    <div class="container">
-        <h1>Best of Arijit Singh, No copyright</h1>
-        <div class="songList"></div>
-        <div class="songName"></div>
-    </div>
+
+               <div class="utility">
+                
+                <br><a href="home.html" class="home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;Home</a><br><br>
+
+
+               <a href="home.html" class="search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;Search</a>
+               </div>
+
+
+               <div class="library">
+                <br>
+                <a href="#" class="lib"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+                    <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                    <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                    <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                    <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                  </svg> &nbsp; &nbsp; Your Library</a><br><br><br>
+                  <div class="songlist">
+                    <div class="song">
+                        <img src="Manike Mage hithe.jpeg" class="song_img" alt="" srcset=""><br>
+                        <p>Manike Mage hithe</p>
+                    </div>
+                    <div class="song">
+                        <img src="Pal.jpeg" class="song_img" alt="" srcset="">
+                        <p>Pal</p>
+                    </div>
+                  </div>
+               </div>
+            </div>
+        
+            <div class="container">
+                <!-- <h1>Best of Arijit Singh, No copyright</h1> -->
+                <div class="songList"></div>
+                <div class="songName"></div>
+            </div>
+            
+        </div>
+        
     <div class="icons">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-skip-back"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-skip-back"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"/></svg>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-skip-forward"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
         <!-- <i class="fas fa-3x fa-step-backward"></i>
         <i class="fas fa-3x fa-play-circle"></i>
@@ -45,6 +71,7 @@
         <!-- <i class="fa-solid fa-forward-step"></i>
         <i class="fa-solid fa-backward-step" style="color: #e1edfe;"></i> -->
     </div>
-    
+</div>
+    <script src="home.js"></script>
 </body>
 </html>

@@ -4,31 +4,43 @@
 }
 
 body{
-    background-color: aqua;
+    background-color: black;
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Varela Round', sans-serif;
 }
-.logo{
-    height: 64px;
-    width: 60px;
-    margin-left: 20px;
+.dot_logo{
+    width: 40px;
+    /* margin-left: 2px; */
+    cursor: pointer;
     /* margin-top: 20px; */
 }
 
-nav{
-    display: flex;
+.navleft{
     background-color: black;
+    color: aliceblue;
+    width: 390px;
 }
 
-.navleft{
-    /* margin-top: 30px; */
+.main_content{
+    display: flex;
+    min-height: 660px;
+}
+.container{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    width: 880px;
+    margin-top: 50px;
+}
+/* .navleft{
+    /* margin-top: 30px; 
     margin-left: 50px;
     display: flex;
 }
 .navright{
     display: flex;
     margin-left: 1000px;
-    /* margin-top: 20px; */
+    /* margin-top: 20px; 
     align-items: center;
 }
 
@@ -58,33 +70,133 @@ nav{
 
 .container{
     min-height: 493px;
-    /* background-color; */
+    background-color: black;
+    /* background-color; 
     color: white;
     display: flex;
     margin: 35px 135px;
     justify-content: center;
+/* } */
+
+.navleft{
+    /* text-decoration: none; */
+    color: aliceblue;
+    background-color: black;
+
 }
 
+.container{
+    width: 1000px;
+    height: 583px;
+}
+
+.library{
+    color: aliceblue;
+    margin-top: 30px;
+    background-color: rgb(65, 64, 64);
+    border-radius: 10px;
+    height: 450px;
+    width: 360px;
+    margin-left: 15px;
+    /* display: flex; */
+    /* align-items: center; */
+    
+}
+
+.lib{
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+.bi-music-note-list{
+    margin-bottom: -1px;
+    
+}
+
+.song_img{
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+}
+.song{
+    display: flex;
+    align-items: center;
+    /* margin-left: 25px; */
+    width: 370px;
+    height: 55px;
+}
+.song p{
+    color: white;
+    margin-left: 25px;
+}
+.song:hover{
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+}
+/* .home{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.search{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+} */
+
+.utility a{
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.utility{
+    margin-top: 10px;
+    background-color: rgb(65, 64, 64);
+    border-radius: 10px;
+    height: 100px;
+    width: 360px;
+    margin-left: 15px;
+}
+
+.feather-home{
+    margin-bottom: -3px;
+}
+
+.feather-search{
+    margin-bottom: -6px;
+}
 .bottom{
     background-color: black;
     color: white;
     position: sticky;
-    height: 100px;
+    height: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 11px; */
 }
 .icons{
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -42px;
+    /* margin-bottom: -70px; */
     cursor: pointer;
     position: relative;
     z-index: 1;
 }
+
+.feather.skip-back:hover{
+    border-radius: 10px;
+    color: black;
+    background-color: whitesmoke;
+}
 #range{
     width: 1000px;
-    margin-bottom: -35px;
-}
+    margin-bottom: -4px;
+} 
