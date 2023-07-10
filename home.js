@@ -63,4 +63,21 @@ next.addEventListener('click',()=>{
         audioElement.src = songs[song_index]
         audioElement.currentTime = 0;
         audioElement.play();
+        pause.src="pause.png";
+        pause_img.appendChild(pause);
+        bottom_play.style.display = "none";
+        pause.style.display = "block";
+})
+prev.addEventListener('click',()=>{
+    if(song_index<0){
+        song_index=songs.length-1
+    }
+
+    else
+       song_index-=1;
+
+    audioElement.src=songs[song_index]
+    audioElement.currentTime=0
+    audioElement.play() 
+
 })
