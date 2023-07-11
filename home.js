@@ -18,15 +18,14 @@ let bottom_play = document.getElementById("bottom_play");
 let pause_img = document.getElementById('pause_img');
 let pause = document.createElement('img');
 let range = document.getElementById('range');
+pause.src="pause.jpeg";
+pause.style.height = '23px';
+pause.style.width = '21px';
 bottom_play.addEventListener('click',()=>{
      audioElement.play();
-     pause.src="pause.jpeg";
      pause_img.appendChild(pause);
      bottom_play.style.display = "none";
      pause.style.display = "block";
-     pause.style.height = '23px';
-     pause.style.width = '21px';
-
 })
 pause_img.addEventListener('click',()=>{
     audioElement.pause();
@@ -53,6 +52,16 @@ let songs=[
      'Music/My Heart Will Go On.mp3',
      'Music/Despacito.mp3',
 ]
+let song=document.querySelectorAll('.song')
+for(let i = 0; i < song.length; i++){
+    song[i].addEventListener('click',()=>{
+        song_index = i;
+        audioElement.src = songs[song_index];
+        audioElement.currentTime = 0;
+        audioElement.play();
+    })
+}
+
 let next = document.getElementById("next");
 let prev = document.getElementById("prev");
 next.addEventListener('click',()=>{
@@ -63,7 +72,15 @@ next.addEventListener('click',()=>{
         audioElement.src = songs[song_index]
         audioElement.currentTime = 0;
         audioElement.play();
-        pause.src="pause.png";
+        if(song_index > songs.length){
+            song[songs.length-1].style.background='rgb(65, 64, 64)'//normal
+            song[song_index].style.background='rgb(41, 41, 41)'//selected colour 
+        }
+        else{
+            song[song_index].style.background='rgb(41, 41, 41)'
+            song[song_index-1].style.background='rgb(65, 64, 64)'
+        }
+        // pause.src="pause.png";
         pause_img.appendChild(pause);
         bottom_play.style.display = "none";
         pause.style.display = "block";
@@ -81,3 +98,4 @@ prev.addEventListener('click',()=>{
     audioElement.play() 
 
 })
+
